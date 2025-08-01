@@ -1,0 +1,191 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/* 全体のスタイル設定 */
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* フォントファミリーを源ノ角ゴシックに設定 */
+    margin: 0;
+    padding: 0;
+    background: #1e1e2f; /* 背景色 */
+    color: #e0e0e0; /* 文字色 */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ビューポートの高さに合わせる */
+}
+
+/* ヘッダーのスタイル設定 */
+header {
+    background: rgba(45, 45, 58, 0.9); /* 半透明な背景色 */
+    color: #e0e0e0;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* ヘッダーのシャドウ */
+    backdrop-filter: blur(8px); /* 背景のぼかし効果 */
+}
+
+/* ヘッダー内のリンクスタイル */
+header h1 a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+/* ナビゲーションリンクの基本スタイル */
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    color: #e0e0e0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    transition: color 0.3s ease, background-color 0.3s ease; /* 色と背景色の遷移をスムーズに */
+    border-radius: 5px; /* 角を丸くする */
+    
+}
+
+/* マウスオーバー時のメニューリンクのスタイル */
+nav a:hover {
+    background-color: rgba(51, 150, 255, 0.103); /* ホバー時の背景色（青に近い色） */
+}
+
+/* アクティブなメニューリンクに下線を追加 */
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* 初期状態では下線を表示しない */
+    height: 2px;
+    background-color: #007BFF;
+    border-radius: 10px;
+    transition: width 0.3s ease, left 0.3s ease; /* 横にスワイプするアニメーション */
+}
+
+/* アクティブなメニューリンクに下線を追加 */
+nav a.active::after {
+    width: 100%; /* 下線の幅をリンク全体に */
+    left: 0; /* 左端からスタート */
+}
+
+/* 非アクティブなメニューリンクをクリックした際のスタイル */
+nav a:not(.active)::after {
+    width: 0; /* 非アクティブなリンクの下線は非表示 */
+}
+
+/* メインコンテンツのスタイル設定 */
+main {
+    padding: 30px; /* 上下のパディングを30pxに設定 */
+    margin: 200px 20px 60px; /* 上のマージンを200px、下のマージンを60pxに設定 */
+    @media screen and (min-width: 1024px) {
+        width: 800px;
+      }
+    
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1; /* メインコンテンツが可変高さになるように設定 */
+    background: rgba(45, 45, 58, 0.8); /* 半透明な背景色 */
+    border-radius: 8px; /* 角を丸くする */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 青みがかったシャドウ */
+}
+
+/* セクションのスタイル設定 */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 青みがかったシャドウ */
+}
+
+/* セクションの背景色設定 */
+main section:nth-of-type(odd) {
+    background: rgba(50, 50, 70, 0.9); /* 奇数番目のセクションの色 */
+}
+main section:nth-of-type(even) {
+    background: rgba(60, 60, 80, 0.9); /* 偶数番目のセクションの色 */
+}
+
+/* 記事のスタイル設定 */
+article {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* 強調されたシャドウ */
+}
+
+/* 記事の背景色設定 */
+main article:nth-of-type(odd) {
+    background: rgba(55, 55, 75, 0.9); /* 奇数番目の記事の色、mainより少し明るい */
+}
+main article:nth-of-type(even) {
+    background: rgba(65, 65, 85, 0.9); /* 偶数番目の記事の色、mainより少し明るい */
+}
+
+/* ソフトウェア情報のスタイル設定 */
+.software-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.software-image {
+    max-width: 200px; /* 最大幅を設定 */
+    height: auto; /* 高さは自動調整 */
+    border-radius: 10px; /* 角を丸くする */
+    object-fit: cover; /* コンテンツを保持しながらサイズ変更 */
+}
+
+/* ボタンのスタイル設定 */
+.btn {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    background: #4e89e2; /* 青寄りのグレー */
+    color: #e0e0e0; /* ボタンの文字色 */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* ボタンのシャドウ */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* 背景色とシャドウの遷移をスムーズに */
+}
+.btn:hover {
+    background: #83a8dbe7; /* ホバー時の背景色（青寄りのグレー） */
+}
+
+/* フッターのスタイル設定 */
+footer {
+    background: rgba(45, 45, 58, 0.9); /* 半透明な背景色 */
+    color: #e0e0e0;
+    text-align: left; /* コピーライトを左寄りに配置 */
+    padding: 15px 20px;
+    position: relative; /* 相対位置 */
+    margin-top: auto; /* メインコンテンツの下にフッターを配置 */
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content p {
+    font-size: 12px; /* フッターの文字サイズを小さくする */
+}
+
+/* レスポンシブデザインのためのメディアクエリ */
+@media (max-width: 600px) {
+    nav {
+        font-size: 14px;
+    }
+    .software-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
