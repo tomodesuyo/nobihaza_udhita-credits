@@ -22,78 +22,18 @@
         </section>-->
 
     <section>
-      <h2>クレジット</h2>
-      <h3>原作</h3>
-      <p>
-        ドラえもん:小学館様<br>
-        バイオハザード:カプコン様<br>
-        ドラえもん のび太のバイオハザード:aaa様<br>
-      </p>
-
-      <h3>制作ツール</h3>
-      <p>
-        WOLF RPGエディター:<a href="https://silversecond.com/WolfRPGEditor/">https://silversecond.com/WolfRPGEditor/</a><br>
-        Wodistant:<a href="https://alpha-stella.com/tool/wodistant/">https://alpha-stella.com/tool/wodistant/</a><br>
-      </p>
-
-      <h3>効果音</h3>
-      <p>
-        ポケットサウンド:<a href="https://pocket-se.info/">https://pocket-se.info/</a><br>
-        効果音工房:<a href="https://umipla.com/">https://umipla.com/</a><br>
-        効果音ラボ:<a href="https://soundeffect-lab.info/">https://soundeffect-lab.info/</a><br>
-        無料効果音で遊ぼう！:<a href="https://taira-komori.jpn.org/">https://taira-komori.jpn.org/</a><br>
-        VSQ plus+:<a href="https://vsq.co.jp/plus/">https://vsq.co.jp/plus/</a><br>
-        DOVA-SYNDROME:<a href="https://dova-s.jp/">https://dova-s.jp/</a><br>
-        On-Jin ～音人～:<a href="https://on-jin.com/">https://on-jin.com/</a><br>
-      </p>
-
-      <h3>使用コモン(使用していないコモンも含みます。)</h3>
-      <p>
-        狼デバッガー: Fyu様 <br>
-        でばこん: K:W!様<br>
-        Check:it: su様<br>
-        すり抜けコモン: tikubonn様<br>
-        自動改行コモン: tikubonn様<br>
-        アイコンテスト: めぁ様<br>
-        総合デバッグコモン: ろは様<br>
-        足跡コモン: ロンバート様<br>
-        近づくと鳴る環境音: えあてき様<br>
-        簡易サウンドテスター: kinoko_takenoko様<br>
-        Layout Builder: しょうゆキノコ様<br>
-        メニュー画面選択肢増減コモン: YADO様<br>
-        戦闘ウィンドウ差し替えシステム: rute.様<br>
-        雪が降るコモン: ひげ様<br>
-        少し高機能な数値入力コモン: ゆむ様<br>
-        マウスでマップ移動コモン: きしどー様<br>
-        計算式演算コモン: ぽり0655様<br>
-        ゲームオーバーコモン:yu-fu-nel様<br>
-        万能ウィンドウ改造:創太@dfg様<br>
-      </p>
+      {% capture credit %}
+      {% include credit.md %}
+      {% endcapture %}
+      {{ credit | markdownify }}
     </section>
 
 
     <section>
-      <h2>注意事項</h2>
-      <p>
-        <strong>
-          本作品は「ドラえもん」の非公式二次創作ゲームであり、原作者・権利者様とは一切関係ありません。
-        </strong>
-      </p>
-      <p>
-        ※本プログラムを実行した時点で､以下の注意事項に同意したとみなします。<br>
-        ※マニュアルは本家をコピペしただけなので実装はされてません。<br>
-        ※このゲームの使用によって起きたトラブルは全て自己責任でお願いします。<br>
-        ※エラー画面が発生した場合はできればスクリーンショットやコメントを送ってくれれば嬉しいです。<br>
-        ※自由に改造してもいいです。(インストーラー版以外暗号化していません)<br>
-        また、改造する際はエディターからテストモードで起動することをおすすめします。<br>
-        ※二次配布は自由ですが、<strong>使用しているコモンや素材などは必ず記載してください｡</strong><br>
-      </p>
-      <p>
-        GitHub:<br>
-        <a href="https://github.com/tomodesuyo/nobihaza_udhita">
-          https://github.com/tomodesuyo/nobihaza_udhita
-        </a>
-      </p>
+      {% capture disclaimer %}
+      {% include disclaimer.md %}
+      {% endcapture %}
+      {{ disclaimer | markdownify }}
     </section>
 
     <section class="update-log">

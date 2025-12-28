@@ -1,0 +1,40 @@
+
+## クレジット
+### 原作
+ドラえもん:小学館様  
+バイオハザード:カプコン様  
+ドラえもん のび太のバイオハザード:aaa様  
+  
+### 制作ツール
+WOLF RPGエディター:<https://silversecond.com/WolfRPGEditor/>  
+Wodistant:<https://alpha-stella.com/tool/wodistant/>  
+
+### 効果音
+ポケットサウンド:<https://pocket-se.info/>  
+効果音工房:<https://umipla.com/>  
+効果音ラボ:<https://soundeffect-lab.info/>  
+無料効果音で遊ぼう！:<https://taira-komori.jpn.org/>  
+VSQ plus+:<https://vsq.co.jp/plus/>  
+DOVA-SYNDROME:<https://dova-s.jp/>  
+On-Jin ～音人～:<https://on-jin.com/>  
+
+### 使用コモン(使用していないコモンも含みます。)
+狼デバッガー: Fyu様  
+でばこん: K:W!様  
+Check:it: su様  
+すり抜けコモン: tikubonn様  
+自動改行コモン: tikubonn様  
+アイコンテスト: めぁ様  
+総合デバッグコモン: ろは様  
+足跡コモン: ロンバート様  
+近づくと鳴る環境音: えあてき様  
+簡易サウンドテスター: kinoko_takenoko様  
+Layout Builder: しょうゆキノコ様  
+メニュー画面選択肢増減コモン: YADO様  
+戦闘ウィンドウ差し替えシステム: rute.様  
+雪が降るコモン: ひげ様  
+少し高機能な数値入力コモン: ゆむ様  
+マウスでマップ移動コモン: きしどー様  
+計算式演算コモン: ぽり0655様  
+ゲームオーバーコモン:yu-fu-nel様  
+万能ウィンドウ改造:創太@dfg様  

@@ -302,9 +302,18 @@ details h4 {
     padding-bottom: 3px;
     font-size: 1.15em;
 }
-details ul{
+section.update-log ul{
     padding-top: 3px;
     padding-left: 32px;
 }
 details h2{}
 
+section p {
+    margin-bottom: 24px;
+}
+section h3 {
+    font-size: 1.4em;
+}
+section ul {
+    padding-left: 16px;
+}
