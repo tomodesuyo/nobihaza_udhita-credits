@@ -243,8 +243,7 @@ details[open] > summary::after {
 details > *:not(summary) {
     padding: 14px 16px;
     background: rgba(50, 50, 65, 0.95);
-    color: #cfd4e6;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    
     line-height: 1.65;
 }
 
@@ -288,3 +287,23 @@ footer a {
 footer a:hover {
     color: #cfd3e6;
 }
+/* details 内の段落の余白を制御 */
+details h2,h4,h3,ul,ol,p {
+    color: #e0e0e0;
+    margin: 0;
+}
+details h3 {
+    font-size: 1.5em;
+    padding-top: 14px;
+    padding-bottom: 6px;
+}
+details h4 {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 1.15em;
+}
+details ul{
+    padding-top: 3px;
+    padding-left: 32px;
+}
+details h2{}
