@@ -288,10 +288,21 @@ footer a:hover {
     color: #cfd3e6;
 }
 /* details 内の段落の余白を制御 */
-details h2,h4,h3,ul,ol,p {
+section.update-log h2,
+section.update-log h4,
+section.update-log h3,
+section.update-log ul,
+section.update-log ol,
+section.update-log p {
     color: #e0e0e0;
-    margin: 0;
+    margin: 0px;
 }
+
+section.update-log p {
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
 details h3 {
     font-size: 1.5em;
     padding-top: 14px;
@@ -306,12 +317,13 @@ section.update-log ul{
     padding-top: 3px;
     padding-left: 32px;
 }
-details h2{}
 
 section p {
+    margin-top: 6px;
     margin-bottom: 24px;
 }
 section h3 {
+    margin: 3px;
     font-size: 1.4em;
 }
 section ul {
