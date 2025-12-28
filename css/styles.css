@@ -307,3 +307,25 @@ details ul{
     padding-left: 32px;
 }
 details h2{}
+
+/* 更新履歴（Markdown）の GitHub 標準スタイルを打ち消す */
+.update-log p,
+.update-log ul,
+.update-log ol,
+.update-log li {
+    margin: 0;
+    padding: 0;
+}
+
+/* 箇条書きだけ少し間隔を戻す */
+.update-log ul,
+.update-log ol {
+    margin: 6px 0 10px 18px;
+}
+
+/* 見出しも揃える */
+.update-log h1,
+.update-log h2,
+.update-log h3 {
+    margin: 12px 0 6px;
+}
