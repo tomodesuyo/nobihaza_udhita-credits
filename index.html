@@ -38,47 +38,16 @@
 
     <section class="update-log">
       <h2>更新履歴</h2>
+      {% assign years = "2025,2024,2023,2022,2021,2020" | split: "," %}
+      {% for y in years %}
       <details>
-        <summary>2025年の更新履歴</summary>
-        {% capture update_2025 %}
-        {% include update/2025.md %}
+        <summary>{{ y }}年の更新履歴</summary>
+        {% capture c %}
+        {% include update/{{ y }}.md %}
         {% endcapture %}
-        {{ update_2025 | markdownify }}
-
-
+        {{ c | markdownify }}
       </details>
-      <details>
-        <summary>2023年の更新履歴</summary>
-        {% capture update_2023 %}
-        {% include update/2023.md %}
-        {% endcapture %}
-        {{ update_2023 | markdownify }}
-      </details>
-      <details>
-        <summary>2022年の更新履歴</summary>
-        {% capture update_2022 %}
-        {% include update/2022.md %}
-        {% endcapture %}
-        {{ update_2022 | markdownify }}
-      </details>
-
-      <details>
-        <summary>2021年の更新履歴</summary>
-        {% capture update_2021 %}
-        {% include update/2021.md %}
-        {% endcapture %}
-        {{ update_2021 | markdownify }}
-      </details>
-
-      <details>
-        <summary>2020年の更新履歴</summary>
-        {% capture update_2020 %}
-        {% include update/2020.md %}
-        {% endcapture %}
-        {{ update_2020 | markdownify }}
-      </details>
-
-
+      {% endfor %}
     </section>
   </main>
 </body>
