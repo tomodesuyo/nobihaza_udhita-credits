@@ -144,7 +144,9 @@ main article:nth-of-type(even) {
 }
 
 /* ボタンのスタイル設定 */
-.btn {
+a.btn {
+    all: unset;
+    display: inline-block;
     display: block;
     width: 200px;
     margin: 10px auto;
@@ -157,7 +159,23 @@ main article:nth-of-type(even) {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* ボタンのシャドウ */
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* 背景色とシャドウの遷移をスムーズに */
 }
-.btn:hover {
+a:visited.btn {
+    all: unset;
+    display: inline-block;
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    background: #4e89e2; /* 青寄りのグレー */
+    color: #e0e0e0; /* ボタンの文字色 */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* ボタンのシャドウ */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* 背景色とシャドウの遷移をスムーズに */
+}
+a.btn:hover {
+    text-decoration: none;
     background: #83a8dbe7; /* ホバー時の背景色（青寄りのグレー） */
 }
 
@@ -189,6 +207,8 @@ footer {
         align-items: flex-start;
     }
 }
+
+/* details 要素のカスタムスタイル */
 
 /* details 全体 */
 details {
@@ -256,28 +276,22 @@ details code {
 }
 
 /* 通常のリンク */
-a {
-    color: #9fb0d8;               /* 青みを抑えたリンク色 */
+main a {
+    color: #70cdff;              /* 青みを抑えたリンク色 */
     text-decoration: none;
-    transition: color 0.25s ease, text-decoration-color 0.25s ease;
 }
 
 /* ホバー・フォーカス時 */
-a:hover,
-a:focus {
+main a:hover,
+main a:focus {
     color: #c7d2f0;               /* 少しだけ明るく */
     text-decoration: underline;
     text-decoration-color: rgba(199, 210, 240, 0.7);
 }
 
 /* 訪問済みリンク */
-a:visited {
+main a:visited {
     color: #5398bd;            /* 紫寄りにならないよう抑制 */
-}
-
-/* メインコンテンツ内は少し強調 */
-main a {
-    color: #70cdff;
 }
 
 /* フッター内のリンクは控えめ */
