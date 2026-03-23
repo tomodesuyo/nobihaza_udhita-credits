@@ -18,6 +18,9 @@ VSQ plus+:<https://vsq.co.jp/plus/>
 DOVA-SYNDROME:<https://dova-s.jp/>  
 On-Jin ～音人～:<https://on-jin.com/>  
 
+### 使用フォント
+源暎エムゴ:<http://okoneya.jp/font/>  
+
 ### 使用コモン(使用していないコモンも含みます。)
 狼デバッガー: Fyu様  
 でばこん: K:W!様  
